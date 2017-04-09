@@ -1,0 +1,85 @@
+// ----------------------------------------------
+// header
+// ----------------------------------------------
+
+.header {
+	height: 120px;
+	background: $secondary-color url('../images/line.jpg') repeat-x bottom left;
+
+	.navbar-brand {
+		display: none;
+
+		&.logo {
+			display: block;
+			margin: 0;
+			padding: 0;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.navbar {
+	.nav {
+		padding-top: 37px;
+
+		> li {
+			// padding-bottom: 40px;
+			margin-left: 4px;
+
+			> a {
+				// padding-top: 10px;
+				// padding-bottom: 10px;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 14px;
+				color: #fff;
+				border-bottom: 2px solid transparent;
+			}
+
+			&:focus > a,
+			> a:focus,
+			&.open > a,
+			&.current-menu-ancestor > a,
+			&.current-menu-parent > a,
+			&.active > a,
+			&:hover > a {
+				background-color: transparent;
+				border-bottom-color: $primary-color;
+			}
+
+			&.featured > a {
+				background-color: $primary-color;
+				border-bottom: none;
+
+				&:hover {
+					background-color: darken($primary-color, 10%);
+				}
+			}
+		}
+	}
+}
+
+
+.navbar-toggle {
+	border-color: #fff;
+	border: none;
+	box-shadow: none;
+
+	&:hover,
+	&:focus {
+		background-color: transparent;
+		box-shadow: none;
+		border: none;
+		outline: none !important;
+	}
+
+	.icon-bar {
+		background-color: #fff;
+		border-radius: 4px;
+		height: 4px;
+		width: 32px;
+	}
+}

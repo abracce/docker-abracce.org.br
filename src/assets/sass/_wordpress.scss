@@ -1,0 +1,13 @@
+
+// Wordpress Core
+@import "_wordpress/alignment",
+		"_wordpress/content",
+		"_wordpress/galleries",
+		"_wordpress/images",
+
+		// Wordpress Core Widgets
+		"_wordpress/widgets/calendar",
+		"_wordpress/widgets/search",
+
+		// Wordpress Core Shortcodes
+		"_wordpress/shortcodes/video";

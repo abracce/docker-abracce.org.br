@@ -1,0 +1,44 @@
+// ----------------------------------------------
+// forms
+// ----------------------------------------------
+
+.form {
+	label {
+		font-weight: normal;
+
+		&.error {
+			background: #f2f3f4;
+			color: lighten(#f00, 23%);
+			display: block;
+			width: 100%;
+			padding: 2px 4px;
+		}
+	}
+
+	.form-control.error {
+		border: 1px solid lighten(#f00, 25%);
+	}
+
+	.odin-form-group-form_name,
+	.odin-form-group-form_mail,
+	.odin-form-group-form_telefone,
+	.odin-form-group-form_empresa {
+		width: 48%;
+	}
+
+	.odin-form-group-form_name,
+	.odin-form-group-form_telefone {
+		float: left;
+	}
+
+	.odin-form-group-form_mail,
+	.odin-form-group-form_empresa {
+		float: right;
+	}
+
+	.odin-form-group-form_assunto,
+	.odin-form-group-form_message {
+		display: block;
+		clear: both;
+	}
+}

@@ -1,0 +1,17 @@
+// ----------------------------------------------
+// Grid Variables.
+// ----------------------------------------------
+
+$columns: 12 !default;
+$page-width: 960px !default;
+$column-width: $page-width / $columns !default;
+$column-padding: 20px !default;
+$class-prefix: "xs-" !default;
+$fluid-prefix: "fluid-" !default;
+$grid-type: static !default; // Grid type: elastic ou static.
+
+// Add support to IE7. (if grid-type == elastic)
+$iesupport: true !default;
+
+// Fuck, magic, mystic and sexy number for IE7 fix xD
+$correction: 0.022;

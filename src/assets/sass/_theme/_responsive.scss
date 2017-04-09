@@ -1,0 +1,157 @@
+// ----------------------------------------------
+/* responsive styles */
+// ----------------------------------------------
+
+/* viewport setado para largura da tela do dispositivo */
+@-ms-viewport { width: device-width; }
+
+/* Telas com resolucao acima de 1200px */
+@media only screen and (min-width: $screen-lg-min) {
+	// ...
+}
+
+/* Telas com resolucao entre 992px e 1199px */
+@media only screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+	// ...
+}
+
+/* Telas com resolucao entre 768px e 991px */
+@media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	// ...
+}
+
+/* Telas com até 991px de resolucao */
+@media only screen and (max-width: $screen-sm-max) {
+	// ...
+}
+
+/* Telas com até 767px de resolucao */
+@media only screen and (max-width: $screen-xs-max) {
+	body {
+		padding-top: 50px;
+	}
+
+	.row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.header {
+		height: 50px;
+		background: $secondary-color;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		z-index: 999;
+
+		.navbar-brand {
+			display: block;
+			line-height: 25px;
+			color: #fff;
+			padding-left: 0;
+
+			&.logo {
+				display: none;
+			}
+		}
+	}
+
+	.navbar {
+		background: $secondary-color;
+
+		.nav {
+			padding-top: 0;
+
+			li {
+				text-align: center;
+			}
+		}
+	}
+
+	.navbar-toggle {
+		margin-right: 0;
+	}
+
+	#banner {
+
+		.col-md-12 {
+			padding: 0 !important;
+		}
+
+		.description {
+			text-align: center;
+			width: 90%;
+			margin: 20px auto;
+		}
+
+		#carousel-banner {
+			.item {
+				.caption {
+					bottom: 55px;
+			left: 10%;
+
+					h2 {
+						width: 90%;
+					}
+					p {
+						display: none;
+					}
+				}
+			}
+
+			.arrows {
+				bottom: 15px;
+				height: 45px;
+				width: 45px;
+				line-height: 45px;
+
+				&.right {
+					right: 35%;
+				}
+
+				&.left {
+					right: auto;
+					left: 35%;
+				}
+			}
+			.carousel-indicators {
+				display: none;
+			}
+		}
+
+	}
+
+	.page-title {
+		margin-bottom: 20px;
+
+		&.single-title {
+			h1, h2 {
+				float: none;
+				width: 100%;
+			}
+		}
+
+		h1, h2 {
+			text-align: center;
+			padding-left: 25px;
+			padding-right: 25px;
+			font-size: 16px;
+		}
+	}
+}
+
+/* Telas com até 479px de resolucao */
+@media only screen and (max-width: 479px) {
+	// ...
+}
+
+/* Telas com até 400px de resolucao */
+@media only screen and (max-width: 400px) {
+	// ...
+}
+
+/* Telas com até 335px de resolucao */
+@media only screen and (max-width: 335px) {
+	// ...
+}

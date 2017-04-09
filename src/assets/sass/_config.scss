@@ -1,0 +1,45 @@
+// ----------------------------------------------
+// Configuration
+// ----------------------------------------------
+
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+$primary-color: #f8b759 !default;
+$secondary-color: #6bb566 !default;
+
+// Custom Boostrap variables.
+$icon-font-path: '../fonts/bootstrap/';
+$bootstrap-sass-asset-helper: false;
+
+// $border-radius-base     : 0px;
+// $border-radius-large    : 0px;
+// $border-radius-small    : 0px;
+
+$font-family-sans-serif : "Lato", Helvetica, Arial, sans-serif;
+$font-family-serif      : Georgia, "Times New Roman", Times, serif;
+
+// $input-height-base      : 45px;
+// $padding-base-vertical  : 10px;
+// $font-size-base		   : 15px;
+
+$dropdown-bg : $secondary-color;
+$dropdown-link-color: #fff;
+$dropdown-link-hover-color: $dropdown-link-color;
+$dropdown-link-hover-bg: $primary-color;
+
+$input-color			: #999;
+$input-border-focus     : $primary-color;
+$tooltip-bg             : $primary-color;
+
+$transition : All ease-in-out 300ms !default;
+
+$body-bg       : #f0f0f0;
+$text-color    : #595959;
+$brand-primary : $primary-color;
+
+// Bootstrap variables and mixins
+@import "_bootstrap/variables";
+@import "_bootstrap/mixins";
+
+// Odin variables
+$text-margin-bottom: $line-height-computed / 2;

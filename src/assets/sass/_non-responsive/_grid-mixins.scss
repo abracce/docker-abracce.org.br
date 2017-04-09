@@ -1,0 +1,110 @@
+// ----------------------------------------------
+// Grid System Minxins
+// ----------------------------------------------
+
+// http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix {
+    *zoom: 1;
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Sets the container and clean the float.
+@mixin grid-container( $type: $grid-type ) {
+    @include clearfix();
+    @if elastic == $grid-type {
+        max-width: $page-width;
+    } @else {
+        width: $page-width;
+    }
+    position: relative;
+    margin: 0 auto;
+}
+
+// Generates the row
+@mixin grid-row( $column: $columns, $padding: $column-padding, $type: $grid-type, $max-width: $page-width ) {
+	@if elastic == $grid-type {
+        margin-right: -percentage( ( $column-padding / 2 ) / $page-width );
+        margin-left: -percentage( ( $column-padding / 2 ) / $page-width );
+
+        @if $iesupport {
+            *margin-right: -percentage( ( $column-padding / 2 ) / $page-width ) - $correction;
+            *margin-left: -percentage( ( $column-padding / 2 ) / $page-width ) - $correction;
+        }
+    } @else {
+        margin-right: -( $padding / 2 );
+        margin-left: -( $padding / 2 );
+    }
+    clear: both;
+}
+
+// Generates the columns of the grid.
+@mixin grid-column( $column: $columns, $padding: $column-padding, $type: $grid-type, $max-width: $page-width ) {
+    @if elastic == $grid-type {
+        width: percentage( ( ( $column-width * $column ) - $padding ) / $max-width );
+        margin-right: percentage( ( $column-padding / 2 ) / $page-width );
+        margin-left: percentage( ( $column-padding / 2 ) / $page-width );
+
+        @if $iesupport {
+            *width: percentage( ( ( $column-width * $column ) - $padding ) / $max-width )  - $correction;
+            *margin-right: percentage( ( $column-padding / 2 ) / $page-width ) - $correction;
+            *margin-left: percentage( ( $column-padding / 2 ) / $page-width ) - $correction;
+        }
+    } @else {
+        width: ( $column-width * $column ) - $padding;
+        margin-right: ( $padding / 2 );
+        margin-left: ( $padding / 2 );
+    }
+    float: left;
+}
+
+// Push the column.
+@mixin grid-push( $offset: 1, $type: $grid-type, $width: $page-width ) {
+    @if elastic == $grid-type {
+        left: percentage( ( $column-width * $offset ) / $width );
+
+        @if $iesupport {
+            *left: percentage( ( $column-width * $offset ) / $width ) - $correction;
+        }
+    } @else {
+        left: $column-width * $offset;
+    }
+    position: relative;
+}
+
+// Pull the column.
+@mixin grid-pull( $offset: 1, $type: $grid-type, $width: $page-width ) {
+    @if elastic == $grid-type {
+        left: - percentage( ( $column-width * $offset ) / $width );
+
+        @if $iesupport {
+            *left: - percentage( ( $column-width * $offset ) / $width ) + $correction;
+        }
+    } @else {
+        left: - $column-width * $offset;
+    }
+    position: relative;
+}
+
+// Breakpoint.
+@mixin breakpoint( $max-width ) {
+    @media screen and ( max-width: $max-width ) {
+        @content;
+    }
+}
+
+// Board classes to reset the grid when it is responsive.
+@mixin join_classes( $class, $total: $columns ) {
+    $classes: ();
+    @for $i from 1 through $total {
+        $classes: join( $classes, unquote( "#{$class}#{$i} " ), comma );
+    }
+    #{$classes} {
+        @content;
+    }
+}

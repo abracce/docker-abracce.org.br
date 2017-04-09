@@ -1,0 +1,68 @@
+// ----------------------------------------------
+// footer
+// ----------------------------------------------
+
+.footer {
+	min-height: 60px;
+	background-color: #599d54;
+	position: relative;
+	padding: 20px 0 0;
+
+	p, li {
+		font-size: 12px;
+		padding: 3px;
+	}
+
+	p, a {
+		color: #cdcdcd;
+	}
+
+	a:hover {
+		color: #fff;
+	}
+
+	.nav-footer {
+		li {
+			float: left;
+
+			> a {
+				padding-left: 5px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.line {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		left: 0;
+		height: 4px;
+		width: 100%;
+		background: $secondary-color url('../images/line.jpg');
+
+		&.top {
+			top: 0;
+			background-position: left center;
+		}
+		&.bottom {
+			bottom: 0;
+			background-position: right center;
+		}
+	}
+}
+
+.gototop {
+	position: fixed;
+	right: 15px;
+	bottom: -50px;
+	@include transition($transition);
+	z-index: 99;
+
+	a {
+		background-color: $primary-color;
+		padding: 10px 15px;
+		display: block;
+		color: #fff;
+	}
+}

@@ -1,0 +1,179 @@
+// ----------------------------------------------
+// boxes
+// ----------------------------------------------
+
+body.home {
+	#main-content {
+		padding-bottom: 0;
+	}
+}
+
+.boxes {
+	margin-bottom: 25px;
+	overflow: hidden;
+
+	.box-title {
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #595959;
+	}
+
+	.box-content {
+		background-color: #fff;
+		box-shadow: 0px 2px 3px #bbb;
+
+		.box-thumb {
+			margin: 0;
+			overflow: hidden;
+			width: 100%;
+			height: 165px;
+		}
+
+		.box-text {
+			padding: 10px 15px;
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	.last-posts {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 10px;
+			border-bottom: 1px solid lighten($text-color, 45%);
+
+			p {
+				a {
+					color: lighten($text-color, 20%);
+
+					strong {
+						color: #6bb566;
+						display: block;
+						margin-bottom: 5px;
+						font-weight: bolder;
+					}
+				}
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: none;
+			}
+		}
+	}
+
+	.box-hero {
+		background-color: $secondary-color;
+		text-align: center;
+		@include transition($transition);
+		padding: 10px 0;
+		color: #fff;
+
+		span.icon-hero {
+			display: block;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			margin: 30px auto;
+			border: 3px solid #fff;
+			border-radius: 50%;
+			background: darken($secondary-color, 10%);
+			@include transition($transition);
+
+			.icon {
+				line-height: 100px;
+				font-size: 3.4em;
+			}
+		}
+
+		h2 {
+			text-transform: uppercase;
+			font-size: 16px;
+			font-weight: bolder;
+		}
+
+		&:hover {
+			background-color: darken($secondary-color, 10%);
+
+			span.icon-hero {
+				background: $secondary-color;
+			}
+		}
+	}
+
+	&.widgets {
+		background: #fff;
+		padding: 10px;
+		overflow: hidden;
+		box-shadow: 0px 2px 3px #bbb;
+
+		.widget-title,
+		.widgettitle,
+		.box-title {
+			margin-top: 0;
+			background: #fff url('../images/line.jpg') repeat-x bottom right;
+			padding-bottom: 10px;
+		}
+
+	}
+}
+
+.social {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		width: percentage(1/3);
+		text-align: center;
+		float: left;
+		margin: 0;
+		padding: 0;
+
+		a {
+			height: 45px;
+			line-height: 45px;
+			width: 100%;
+			display: block;
+			color: #fff;
+			font-size: 24px;
+		}
+
+		&.facebook a {
+			background-color: #3D5B99;
+
+			&:hover {
+				background-color: darken(#3D5B99, 5%);
+			}
+		}
+
+		&.twitter a {
+			background-color: #5EA9DD;
+
+			&:hover {
+				background-color: darken(#5EA9DD, 5%);
+			}
+		}
+
+		&.youtube a {
+			background-color: #E12A27;
+
+			&:hover {
+				background-color: darken(#E12A27, 5%);
+			}
+		}
+	}
+}
+
+
+body.home {
+	.social li a {
+		height: 80px;
+		line-height: 80px;
+	}
+}

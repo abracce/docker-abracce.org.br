@@ -1,0 +1,38 @@
+// ----------------------------------------------
+// Grid System
+// ----------------------------------------------
+
+/* The grid */
+.container {
+    @include grid-container();
+    *margin-bottom: $column-padding;
+}
+
+.row {
+    @include grid-row();
+}
+
+@for $i from 1 through $columns {
+    .col-#{$class-prefix}#{$i} {
+        @include grid-column( $i );
+    }
+}
+
+@for $i from 1 through $columns {
+    .push-#{$class-prefix}#{$i} {
+        @include grid-push( $i );
+    }
+}
+
+@for $i from 1 through $columns {
+    .pull-#{$class-prefix}#{$i} {
+        @include grid-pull( $i );
+    }
+}
+
+$grid-type: elastic;
+@for $i from 1 through $columns {
+    .col-#{$fluid-prefix}#{$i} {
+        @include grid-column( $i );
+    }
+}

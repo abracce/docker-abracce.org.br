@@ -1,0 +1,203 @@
+// ----------------------------------------------
+// banner
+// ----------------------------------------------
+
+#banner {
+	background: url("../images/banner-shadow.png") no-repeat center bottom;
+	padding-bottom: 30px;
+
+	> .bg-full {
+		// padding-top: 60px;
+		padding-bottom: 0;
+	}
+
+	.description {
+		// position: absolute;
+		// right: 15px;
+		// top: -60px;
+		text-align: right;
+		font-size: 20px;
+		color: $primary-color;
+		text-transform: uppercase;
+		font-style: italic;
+		font-weight: bolder;
+	}
+
+	#carousel-banner {
+		min-height: 300px;
+
+		.item {
+			background-repeat: no-repeat;
+			background-position: center top;
+			position: absolute;
+			height: 300px;
+			width: 100%;
+            padding: 0;
+            display: block !important;
+
+            left: 0 !important;
+            top: 0;
+
+            @include opacity(0);
+            @include bg-size(cover);
+            @include transition($transition);
+
+            &.left,
+            &.right {
+		@include opacity(0);
+            }
+
+            &:first-child {
+                top: auto;
+                position: relative;
+            }
+
+            &.active {
+                @include opacity(1);
+                @include transition($transition);
+                z-index: 1;
+            }
+
+            .caption {
+		position: absolute;
+		z-index: 2;
+		bottom: 40px;
+		left: 40px;
+
+		h2 {
+			width: 400px;
+			// height: 60px;
+			color: #595959;
+			background: rgba(#aac3d8, .8);
+			padding: 15px;
+			font-size: 18px;
+			margin: 0 0 10px;
+			font-weight: normal;
+		}
+
+		p {
+			width: 400px;
+			// height: 100px;
+			color: #fff;
+			padding: 15px;
+			background: rgba(#595959, .8);
+			border-left: 5px solid #abc4d6;
+			margin: 0;
+		}
+            }
+		}
+
+	    .active {
+
+	        .caption {
+	            h2 {
+			-webkit-animation: fadeInUp 300ms linear 300ms both;
+		            -moz-animation: fadeInUp 300ms linear 300ms both;
+		            -o-animation: fadeInUp 300ms linear 300ms both;
+		            -ms-animation: fadeInUp 300ms linear 300ms both;
+		            animation: fadeInUp 300ms linear 300ms both;
+		        }
+	            p {
+			-webkit-animation: fadeInUp 600ms linear 600ms both;
+		            -moz-animation: fadeInUp 600ms linear 600ms both;
+		            -o-animation: fadeInUp 600ms linear 600ms both;
+		            -ms-animation: fadeInUp 600ms linear 600ms both;
+		            animation: fadeInUp 600ms linear 600ms both;
+		        }
+	        }
+
+	    }
+
+	    .carousel-indicators {
+		bottom: 0;
+
+		li {
+			background-color: darken($secondary-color, 10%);
+			border-color: darken($secondary-color, 10%);
+		}
+
+		.active {
+			background-color: lighten($primary-color, 10%);
+		}
+	    }
+
+		.arrows {
+			position: absolute;
+			display: inline-block;
+			background: rgba(#48474a, .85);
+			color: #fff;
+			bottom: 20px;
+			height: 35px;
+			width: 25px;
+			line-height: 35px;
+			text-align: center;
+			z-index: 2;
+
+			&.right {
+				right: 20px;
+			}
+			&.left {
+				right: 50px;
+			}
+
+			&:hover {
+				background: $primary-color;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animated.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	-moz-animation-name: fadeInUp;
+	-o-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}

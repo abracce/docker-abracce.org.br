@@ -1,0 +1,3 @@
+[submodule "src/abracce"]
+	path = src/abracce
+	url = git@github.com:nandomoreirame/theme-abracce.org.br.git

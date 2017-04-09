@@ -1,0 +1,653 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPKraken\n"
+"POT-Creation-Date: 2014-06-12 21:10-0300\n"
+"PO-Revision-Date: 2014-06-12 21:10-0300\n"
+"Last-Translator: Fernando Moreira Costa <fernando@agenciatrend.com.br>\n"
+"Language-Team: Fernando Moreira\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../app/odin/core/classes/abstracts/abstract-front-end-form.php:287
+msgid "Submit"
+msgstr ""
+
+#: ../app/odin/core/classes/abstracts/abstract-front-end-form.php:330
+msgid "Form submitted successfully!"
+msgstr ""
+
+#: ../app/odin/core/classes/abstracts/abstract-front-end-form.php:585
+#: ../app/odin/core/classes/abstracts/abstract-front-end-form.php:597
+#, php-format
+msgid "%s is required."
+msgstr ""
+
+#: ../app/odin/core/classes/abstracts/abstract-front-end-form.php:591
+#, php-format
+msgid "%s must be an email address valid."
+msgstr ""
+
+#: ../app/odin/core/classes/class-bootstrap-nav.php:203
+msgid "Add a menu"
+msgstr ""
+
+#: ../app/odin/core/classes/class-contact-form.php:182
+#, php-format
+msgid "Message sent by the form %s in %s at %s"
+msgstr ""
+
+#: ../app/odin/core/classes/class-metabox.php:87
+#: ../app/odin/core/classes/class-metabox.php:441
+#: ../app/odin/core/classes/class-theme-options.php:89
+#: ../app/odin/core/classes/class-theme-options.php:621
+#: ../app/odin/core/classes/class-user-meta.php:70
+#: ../app/odin/core/classes/class-user-meta.php:407
+msgid "Add images in gallery"
+msgstr ""
+
+#: ../app/odin/core/classes/class-metabox.php:88
+#: ../app/odin/core/classes/class-theme-options.php:90
+#: ../app/odin/core/classes/class-user-meta.php:71
+msgid "Add in gallery"
+msgstr ""
+
+#: ../app/odin/core/classes/class-metabox.php:89
+#: ../app/odin/core/classes/class-metabox.php:402
+#: ../app/odin/core/classes/class-metabox.php:430
+#: ../app/odin/core/classes/class-theme-options.php:91
+#: ../app/odin/core/classes/class-theme-options.php:572
+#: ../app/odin/core/classes/class-theme-options.php:610
+#: ../app/odin/core/classes/class-user-meta.php:72
+#: ../app/odin/core/classes/class-user-meta.php:368
+#: ../app/odin/core/classes/class-user-meta.php:396
+msgid "Remove image"
+msgstr ""
+
+#: ../app/odin/core/classes/class-metabox.php:90
+#: ../app/odin/core/classes/class-theme-options.php:92
+#: ../app/odin/core/classes/class-user-meta.php:73
+msgid "Choose a file"
+msgstr ""
+
+#: ../app/odin/core/classes/class-metabox.php:91
+#: ../app/odin/core/classes/class-theme-options.php:93
+#: ../app/odin/core/classes/class-user-meta.php:74
+msgid "Add file"
+msgstr ""
+
+#: ../app/odin/core/classes/class-metabox.php:379
+#: ../app/odin/core/classes/class-theme-options.php:537
+#: ../app/odin/core/classes/class-user-meta.php:345
+msgid "Select file"
+msgstr ""
+
+#: ../app/odin/core/classes/class-metabox.php:402
+#: ../app/odin/core/classes/class-theme-options.php:572
+#: ../app/odin/core/classes/class-user-meta.php:368
+msgid "Select image"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:73
+#: ../app/odin/core/classes/class-post-type.php:80
+#: ../app/odin/core/classes/class-taxonomy.php:75
+#: ../app/odin/core/classes/class-taxonomy.php:84
+#, php-format
+msgid "%ss"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:74
+#: ../app/odin/core/classes/class-taxonomy.php:76
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:75
+#: ../app/odin/core/classes/class-taxonomy.php:78
+#, php-format
+msgid "View %s"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:76
+#: ../app/odin/core/classes/class-taxonomy.php:79
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:77
+#: ../app/odin/core/classes/class-taxonomy.php:80
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:78
+#: ../app/odin/core/classes/class-taxonomy.php:81
+#, php-format
+msgid "Update %s"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:79
+#: ../app/odin/core/classes/class-taxonomy.php:82
+#: ../app/odin/core/classes/class-taxonomy.php:83
+#, php-format
+msgid "Parent %s:"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:81
+msgid "Add New"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:82
+#: ../app/odin/core/classes/class-taxonomy.php:85
+#, php-format
+msgid "Add New %s"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:83
+#: ../app/odin/core/classes/class-taxonomy.php:86
+#, php-format
+msgid "New %s"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:84
+#: ../app/odin/core/classes/class-taxonomy.php:87
+#, php-format
+msgid "All %ss"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:85
+#, php-format
+msgid "No %s found"
+msgstr ""
+
+#: ../app/odin/core/classes/class-post-type.php:86
+#, php-format
+msgid "No %s found in Trash"
+msgstr ""
+
+#: ../app/odin/core/classes/class-taxonomy.php:77
+#, php-format
+msgid "Add or Remove %ss"
+msgstr ""
+
+#: ../app/odin/core/classes/class-taxonomy.php:88
+#, php-format
+msgid "Separate %ss with comma"
+msgstr ""
+
+#: ../app/odin/core/classes/class-taxonomy.php:89
+#, php-format
+msgid "Choose from %ss most used"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:20
+msgid "Facebook Like Box"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:21
+msgid "This widget includes a facebook like box on your blog"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:48
+msgid "Title:"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:54
+msgid "Facebook Page URL:"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:60
+msgid "Width:"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:66
+msgid "Height:"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:72
+msgid "Color Scheme:"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:74
+msgid "Dark"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:75
+msgid "Light"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:81
+msgid "Show Friends Faces"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:86
+msgid "Show Posts"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:91
+msgid "Show Header"
+msgstr ""
+
+#: ../app/odin/core/classes/widgets/class-widget-like-box.php:96
+msgid "Show Border"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:61
+msgid "&laquo; Previous"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:62
+msgid "Next &raquo;"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:104
+msgid "Related Posts"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:233
+msgid "Home"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:325
+#, php-format
+msgid "%sCategory: %s%s"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:329
+#, php-format
+msgid "%sTag: %s%s"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:337
+#, php-format
+msgid "%sSearch result for: &quot;%s&quot;%s"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:344
+msgid "Posted by"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:383
+msgid "404 Error"
+msgstr ""
+
+#: ../app/odin/core/helpers.php:390 ../app/odin/core/helpers.php:392
+#: ../app/odin/inc/optimize.php:27
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../app/odin/inc/comments-loop.php:23
+msgid "Pingback:"
+msgstr ""
+
+#: ../app/odin/inc/comments-loop.php:23 ../app/odin/inc/comments-loop.php:33
+msgid "Edit"
+msgstr ""
+
+#: ../app/odin/inc/comments-loop.php:32
+msgid "in"
+msgstr ""
+
+#: ../app/odin/inc/comments-loop.php:32
+msgid "at"
+msgstr ""
+
+#: ../app/odin/inc/comments-loop.php:32
+msgid "said:"
+msgstr ""
+
+#: ../app/odin/inc/comments-loop.php:36
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../app/odin/inc/comments-loop.php:41
+msgid "Respond"
+msgstr ""
+
+#: ../app/odin/inc/template-tags.php:62
+#: ../app/plugins/sticky-posts/sticky-posts.php:97
+msgid "Sticky"
+msgstr ""
+
+#: ../app/odin/inc/template-tags.php:67
+msgid "Posted in"
+msgstr ""
+
+#: ../app/odin/inc/template-tags.php:70
+msgid "by"
+msgstr ""
+
+#: ../app/class/custom-posts.php:22
+msgid "The Parameter <code>$post_slug</code> is required!!"
+msgstr ""
+
+#: ../app/functions/theme-functions.php:72
+msgid "Main Sidebar"
+msgstr ""
+
+#: ../app/functions/theme-functions.php:74
+msgid "Site Main Sidebar"
+msgstr ""
+
+#: ../app/functions/theme-functions.php:89
+msgid "Custom Sidebar"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:34
+#: ../app/modules/newsletter/functions.php:97
+#: ../app/modules/newsletter/functions.php:299
+msgid "Name"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:35
+#: ../app/modules/newsletter/functions.php:98
+#: ../app/modules/newsletter/functions.php:300
+msgid "Email"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:151
+msgid "Send"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:190
+msgid "Email already registered in our database!"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:219
+msgid "Newsletter successfully registered!"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:225
+msgid "Error in registration!"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:233
+msgid "Invalid Email!"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:240
+msgid "Do not leave any field blank!"
+msgstr ""
+
+#: ../app/modules/newsletter/functions.php:259
+#: ../app/modules/newsletter/functions.php:260
+msgid "Export subscribers"
+msgstr ""
+
+#: ../app/options/fields/color_gradient/field_color_gradient.php:35
+msgid "From:"
+msgstr ""
+
+#: ../app/options/fields/color_gradient/field_color_gradient.php:38
+msgid " To:"
+msgstr ""
+
+#: ../app/options/fields/google_webfonts/field_google_webfonts.php:42
+msgid ""
+"The fonts provided below are free to use custom fonts from the <a href="
+"\"http://www.google.com/webfonts\" target=\"_blank\">Google Web Fonts "
+"directory</a>.<br/>Please <a href=\"http://www.google.com/webfonts\" target="
+"\"_blank\">browse the directory</a> to preview a font, then select your "
+"choice below."
+msgstr ""
+
+#: ../app/options/fields/multi_text/field_multi_text.php:39
+#: ../app/options/fields/multi_text/field_multi_text.php:46
+#: ../app/options/fields/multi_text/field_multi_text.php:50
+msgid "Remove"
+msgstr ""
+
+#: ../app/options/fields/multi_text/field_multi_text.php:54
+msgid "Add More"
+msgstr ""
+
+#: ../app/options/fields/upload/field_upload.php:36
+#: ../app/options/fields/upload_image/field_upload_image.php:40
+msgid "Search image..."
+msgstr ""
+
+#: ../app/options/fields/upload/field_upload.php:37
+msgid "Clear"
+msgstr ""
+
+#: ../app/options/fields/upload_image/field_upload_image.php:41
+msgid "Remove Upload"
+msgstr ""
+
+#: ../app/options/validation/color/validation_color.php:15
+msgid "This field must be a valid color value."
+msgstr ""
+
+#: ../app/options/validation/comma_numeric/validation_comma_numeric.php:15
+msgid ""
+"You must provide a comma seperated list of numerical values for this option."
+msgstr ""
+
+#: ../app/options/validation/date/validation_date.php:15
+msgid "This field must be a valid date."
+msgstr ""
+
+#: ../app/options/validation/email/validation_email.php:15
+msgid "You must provide a valid email for this option."
+msgstr ""
+
+#: ../app/options/validation/no_html/validation_no_html.php:15
+msgid ""
+"You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr ""
+
+#: ../app/options/validation/no_special_chars/validation_no_special_chars.php:15
+msgid ""
+"You must not enter any special characters in this field, all special "
+"characters have been removed."
+msgstr ""
+
+#: ../app/options/validation/numeric/validation_numeric.php:15
+msgid "You must provide a numerical value for this option."
+msgstr ""
+
+#: ../app/options/validation/url/validation_url.php:15
+msgid "You must provide a valid URL for this option."
+msgstr ""
+
+#: ../app/options/options.php:55 ../app/options/options.php:57
+msgid "Options"
+msgstr ""
+
+#: ../app/options/options.php:71
+msgid "Help sidebar"
+msgstr ""
+
+#: ../app/options/options.php:252 ../app/options/options.php:253
+#: ../app/options/options.php:694
+msgid "Import / Export"
+msgstr ""
+
+#: ../app/options/options.php:279 ../app/options/options.php:280
+#: ../app/options/options.php:789
+msgid "Dev Mode Info"
+msgstr ""
+
+#: ../app/options/options.php:335
+msgid "Are you sure? Resetting will loose all custom values."
+msgstr ""
+
+#: ../app/options/options.php:656 ../app/options/options.php:815
+msgid "Reset to Defaults"
+msgstr ""
+
+#: ../app/options/options.php:664
+msgid "<strong>Settings Imported!</strong>"
+msgstr ""
+
+#: ../app/options/options.php:666
+msgid "<strong>Settings Saved!</strong>"
+msgstr ""
+
+#: ../app/options/options.php:670
+msgid "<strong>Settings have changed!, you should save them!</strong>"
+msgstr ""
+
+#: ../app/options/options.php:671
+msgid "<strong><span></span> error(s) were found!</strong>"
+msgstr ""
+
+#: ../app/options/options.php:673
+msgid "<strong><span></span> warning(s) were found!</strong>"
+msgstr ""
+
+#: ../app/options/options.php:709
+msgid " Dev Mode"
+msgstr ""
+
+#: ../app/options/options.php:727
+msgid "Import / Export Options"
+msgstr ""
+
+#: ../app/options/options.php:729
+msgid "Import Options"
+msgstr ""
+
+#: ../app/options/options.php:731
+msgid "Import from file"
+msgstr ""
+
+#: ../app/options/options.php:731
+msgid "Import from URL"
+msgstr ""
+
+#: ../app/options/options.php:737
+msgid ""
+"Input your backup file below and hit Import to restore your sites options "
+"from a backup."
+msgstr ""
+
+#: ../app/options/options.php:750
+msgid ""
+"Input the URL to another sites options set and hit Import to load the "
+"options from that site."
+msgstr ""
+
+#: ../app/options/options.php:758
+msgid "Import"
+msgstr ""
+
+#: ../app/options/options.php:758
+msgid ""
+"WARNING! This will overwrite any existing options, please proceed with "
+"caution!"
+msgstr ""
+
+#: ../app/options/options.php:761
+msgid "Export Options"
+msgstr ""
+
+#: ../app/options/options.php:763
+msgid ""
+"Here you can copy/download your themes current option settings. Keep this "
+"safe as you can use it as a backup should anything go wrong. Or you can use "
+"it to restore your settings on this site (or any other site). You also have "
+"the handy option to copy the link to yours sites settings. Which you can "
+"then use to duplicate on another site"
+msgstr ""
+
+#: ../app/options/options.php:766
+msgid "Copy"
+msgstr ""
+
+#: ../app/options/options.php:766
+msgid "Copy Link"
+msgstr ""
+
+#: ../app/plugins/poll/views/admin-options.php:2
+#: ../app/plugins/poll/ajax-poll-admin.php:15
+msgid "Poll"
+msgstr ""
+
+#: ../app/plugins/poll/ajax-poll.php:62
+msgid "data folder[tbase] is not writable"
+msgstr ""
+
+#: ../app/plugins/poll/ajax-poll.php:68
+msgid "[form_tid] is not set"
+msgstr ""
+
+#: ../app/plugins/poll/ajax-poll.php:75
+msgid "[form_tid] is empty"
+msgstr ""
+
+#: ../app/plugins/poll/ajax-poll.php:97
+msgid "Can not write data in [tbase] "
+msgstr ""
+
+#: ../app/plugins/poll/ajax-poll.php:98
+msgid "(Could not get the lock!)"
+msgstr ""
+
+#: ../app/plugins/sticky-posts/sticky-posts.php:38
+msgid "Enable support for sticky custom post types."
+msgstr ""
+
+#: ../app/plugins/sticky-posts/sticky-posts.php:50
+msgid "No public custom post types found."
+msgstr ""
+
+#: ../app/plugins/sticky-posts/sticky-posts.php:77
+msgid "Sticky Custom Post Types"
+msgstr ""
+
+#: ../app/plugins/sticky-posts/sticky-posts.php:79
+msgid "Show \"Stick this...\" checkbox on"
+msgstr ""
+
+#: ../app/plugins/sticky-posts/sticky-posts.php:80
+msgid "Posts and pages"
+msgstr ""
+
+#: ../app/plugins/sticky-posts/sticky-posts.php:89
+msgid "Stick this to the front page"
+msgstr ""
+
+#: ../search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../searchform.php:12
+msgid "Search..."
+msgstr ""
+
+#: ../template-part/content.php:37
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../template-part/content.php:39
+msgid "Pages:"
+msgstr ""
+
+#: ../template-part/content.php:50
+msgid "Posted in:"
+msgstr ""
+
+#: ../template-part/content.php:50
+msgid ", "
+msgstr ""
+
+#: ../template-part/content.php:54
+msgid "Leave a comment"
+msgstr ""
+
+#: ../template-part/content.php:54
+msgid "1 Comment"
+msgstr ""
+
+#: ../template-part/content.php:54
+msgid "% Comments"
+msgstr ""

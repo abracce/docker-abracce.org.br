@@ -1,0 +1,35 @@
+
+/*
+ *
+ * KR_Options_radio_img
+ *
+ */
+.radio-img input[type='radio'] {
+	display: none;
+}
+
+.radio-img,
+.radio-img-selected {
+	margin: 6px;
+	display: inline-block;
+	padding: 10px;
+}
+
+.radio-img-selected {
+	background-color: #f9f9f9;
+}
+
+.radio-img img,
+.radio-img-selected img {
+	border-width: 4px;
+	border-style: solid;
+}
+
+.radio-img img {
+	border-color: #e9e9e9;
+}
+
+.radio-img-selected img {
+	border-color: #c9c9c9;
+}
+

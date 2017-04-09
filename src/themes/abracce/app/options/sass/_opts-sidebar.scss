@@ -1,0 +1,131 @@
+
+#opts-sidebar,
+#opts-main {
+	min-height: 300px;
+}
+
+.opts-menu-warning {
+	background-color: #C09853;
+	color: #FCF8E3;
+	display: inline-block;
+	float: right;
+	padding: 6px 7px 4px 7px;
+	margin-left: 4px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font-family: sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 9px;
+}
+
+.opts-menu-error {
+	background-color: #B94A48;
+	color: #F2DEDE;
+	display: inline-block;
+	float: right;
+	padding: 6px 7px 4px 7px;
+	margin-left: 4px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font-family: sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	line-height: 9px;
+}
+
+#opts-main {
+	background: #FFFFFF;
+	margin-left: 200px;
+	// border-left: 1px solid #DFDFDF;
+	padding: 10px 20px;
+	position: relative;
+}
+
+#opts-sidebar {
+	width: 200px;
+	float: left;
+	height: 100%;
+	background: #eeeeee;
+	position: absolute;
+
+	#opts-group-menu {
+		margin-top: 0px;
+
+		li {
+			margin: 0px;
+
+			&.divide {
+				padding: 0px;
+				border-width: 1px 0px 1px 0px;
+				border-style: solid;
+				border-bottom-color: #DFDFDF;
+				border-top-color: #F9F9F9;
+			}
+
+			a {
+				display: block;
+				padding: 10px 13px;
+				background: #eeeeee;
+				// border-width: 1px 0px 1px 0px;
+				// border-style: solid;
+				// border-bottom-color: #DFDFDF;
+				// border-top-color: #F9F9F9;
+				color: #222;
+				font-weight: bold;
+				text-decoration: none;
+
+				&:hover {
+					background: darken(#eeeeee, 5%);
+					width: 174px;
+					margin-right: -2px;
+				}
+
+				&.custom-tab {
+					background: #f6f6f6;
+				}
+
+				.dashicons {
+					color: #999;
+				}
+			}
+
+			&.active a {
+				background: #0074A2;
+				color: #fff;
+				width: 174px;
+				margin-right: -2px;
+				position: relative;
+
+				// &:before,
+				&:after {
+					content: '';
+					display: inline-block;
+					width: 0;
+					height: 0;
+					border: 10px solid transparent;
+					// vertical-align: middle;
+					position: absolute;
+					right: 0;
+				}
+
+				.dashicons {
+					color: #fefefe;
+				}
+
+				// &:before {
+				//     border-top-color: #CBCBCB;
+				//     border-bottom-color: #CBCBCB;
+				//     border-right-color: #CBCBCB;
+				// }
+
+				&:after {
+					border-right-width: 10px;
+					border-right-color: #FFFFFF;
+				}
+			}
+		}
+	}
+}

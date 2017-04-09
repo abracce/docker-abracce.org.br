@@ -1,0 +1,43 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    container_name: docker_web
+    volumes:
+      - "./src/themes:/var/www/html/wp-content/themes"
+      - "./src/uploads:/var/www/html/wp-content/uploads"
+      - "./src/plugins:/var/www/html/wp-content/plugins"
+    links:
+      - mysqldb:mysqldb
+    environment:
+      PHP_SITE_NAME: dev
+      PHP_XDEBUG_ENABLED: 1 # Set 1 to enable or 0 to desable.
+
+  mysqldb:
+    image: wodby/wordpress-mariadb
+    container_name: docker_mysqldb
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - ./.runtime/mariadb:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: docker_phpmyadmin
+    environment:
+      PMA_HOST: mysqldb
+      PMA_USER: wordpress
+      PMA_PASSWORD: wordpress
+      PHP_UPLOAD_MAX_FILESIZE: 1G
+      PHP_MAX_INPUT_VARS: 1G
+    restart: always
+    ports:
+     - 8001:80
+    volumes:
+     - /sessions

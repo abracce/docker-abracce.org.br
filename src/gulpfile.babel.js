@@ -7,7 +7,7 @@ import Bourbon from 'node-bourbon';
 
 const $ = Plugins();
 
-Gulp.task('stylesheets', () => Gulp.src(`${Config.src.sass}/*.sass`)
+Gulp.task('stylesheets', () => Gulp.src(`${Config.src.sass}/*.scss`)
   .pipe($.plumber(Config.plumberHandler))
   .pipe($.sass(Config.sassSettings))
   .pipe($.autoprefixer(Config.autoprefixer))
@@ -21,7 +21,7 @@ Gulp.task('stylesheets', () => Gulp.src(`${Config.src.sass}/*.sass`)
   .pipe($.plumber.stop()));
 
 Gulp.task('watch', ['stylesheets'], () => {
-  Gulp.watch(`${Config.src.sass}/**/*.sass`, ['stylesheets']);
+  Gulp.watch(`${Config.src.sass}/**/*.scss`, ['stylesheets']);
 });
 
 Gulp.task('default', [ 'watch' ]);

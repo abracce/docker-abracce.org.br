@@ -3,7 +3,7 @@
 import Notify from 'gulp-notify';
 import Bourbon from 'node-bourbon';
 
-const themeName = 'docker-wp';
+const themeName = 'abracce';
 
 const config = {
   src: {
@@ -11,8 +11,8 @@ const config = {
     javascripts: './assets/javascripts',
   },
   dist: {
-    stylesheets: `./themes/${themeName}/assets/stylesheets`,
-    javascripts: `./themes/${themeName}/assets/javascripts`,
+    stylesheets: `./themes/${themeName}/assets/css`,
+    javascripts: `./themes/${themeName}/assets/js`,
     images: `./themes/${themeName}/assets/images`,
     fonts: `./themes/${themeName}/assets/fonts`,
   },

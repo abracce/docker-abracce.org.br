@@ -65,4 +65,4 @@ Enjoy! :smiley:
 
 ## License
 
-[MIT License](/LICENSE) © Fernando Moreira
+It is free under the [GNU General Public License v3.0](/LICENSE).

@@ -1,4 +1,4 @@
-;(function($) {
+(function($) {
 
     $('body').kraken({
 		'masks' : true,
